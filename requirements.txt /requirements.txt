@@ -4,4 +4,5 @@ numpy==1.21.2
 geopy==2.2.0
 osmnx==1.1.2
 networkx==2.6.3
+python-3.9
 
