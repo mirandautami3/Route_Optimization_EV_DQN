@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1912eb1f9e89a157f43737cbf1c1c220 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1912eb1f9e89a157f43737cbf1c1c220" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1912eb1f9e89a157f43737cbf1c1c220 = L.map(
+                "map_1912eb1f9e89a157f43737cbf1c1c220",
+                {
+                    center: [-7.2864493, 112.6314568],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0888a1de4c4bc53b6c653fd75322b28a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_0888a1de4c4bc53b6c653fd75322b28a.addTo(map_1912eb1f9e89a157f43737cbf1c1c220);
+        
+    
+            var marker_354a643828f750bc6cf90a3139898ae3 = L.marker(
+                [-7.2864493, 112.6314568],
+                {}
+            ).addTo(map_1912eb1f9e89a157f43737cbf1c1c220);
+        
+    
+            var icon_bb9763eecb8e2b6f0d37b4785c5fdd5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_354a643828f750bc6cf90a3139898ae3.setIcon(icon_bb9763eecb8e2b6f0d37b4785c5fdd5b);
+        
+    
+        var popup_d695a38318a6ca163e235d6e2f126d1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_04971f2810aabd66cf540c4c7c81f989 = $(`<div id="html_04971f2810aabd66cf540c4c7c81f989" style="width: 100.0%; height: 100.0%;">Lokasi Awal: (-7.2864493, 112.6314568)</div>`)[0];
+                popup_d695a38318a6ca163e235d6e2f126d1f.setContent(html_04971f2810aabd66cf540c4c7c81f989);
+            
+        
+
+        marker_354a643828f750bc6cf90a3139898ae3.bindPopup(popup_d695a38318a6ca163e235d6e2f126d1f)
+        ;
+
+        
+    
+    
+            var marker_151ac2d8263cb1dfe2b663fd3dbd4bb9 = L.marker(
+                [-7.2609651, 112.7388506],
+                {}
+            ).addTo(map_1912eb1f9e89a157f43737cbf1c1c220);
+        
+    
+            var icon_6a1499904ed7ae25415eb123227de329 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_151ac2d8263cb1dfe2b663fd3dbd4bb9.setIcon(icon_6a1499904ed7ae25415eb123227de329);
+        
+    
+        var popup_ea4caea5431c3fabd2fedd07ee103c45 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1fa9ca28eece010329aa96b2fc64bed = $(`<div id="html_f1fa9ca28eece010329aa96b2fc64bed" style="width: 100.0%; height: 100.0%;">Lokasi Tujuan: (-7.2609651, 112.7388506)</div>`)[0];
+                popup_ea4caea5431c3fabd2fedd07ee103c45.setContent(html_f1fa9ca28eece010329aa96b2fc64bed);
+            
+        
+
+        marker_151ac2d8263cb1dfe2b663fd3dbd4bb9.bindPopup(popup_ea4caea5431c3fabd2fedd07ee103c45)
+        ;
+
+        
+    
+    
+            var marker_67e288f203e06807d3991fbf2f8c5ff9 = L.marker(
+                [-7.2902611, 112.6758078],
+                {}
+            ).addTo(map_1912eb1f9e89a157f43737cbf1c1c220);
+        
+    
+            var icon_c42969f1856805aef2f3ee396f5f40e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_67e288f203e06807d3991fbf2f8c5ff9.setIcon(icon_c42969f1856805aef2f3ee396f5f40e8);
+        
+    
+        var popup_259aff147c74c8ab28ae77504be80a16 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52aa376fb6848eb62fb4aaf73d071014 = $(`<div id="html_52aa376fb6848eb62fb4aaf73d071014" style="width: 100.0%; height: 100.0%;">Total jarak DQN: 0.00 km</div>`)[0];
+                popup_259aff147c74c8ab28ae77504be80a16.setContent(html_52aa376fb6848eb62fb4aaf73d071014);
+            
+        
+
+        marker_67e288f203e06807d3991fbf2f8c5ff9.bindPopup(popup_259aff147c74c8ab28ae77504be80a16)
+        ;
+
+        
+    
+</script>
+</html>

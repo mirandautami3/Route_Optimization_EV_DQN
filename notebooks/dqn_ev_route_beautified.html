@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_73367d498dd8044949217b2cdf74deab {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_73367d498dd8044949217b2cdf74deab" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_73367d498dd8044949217b2cdf74deab = L.map(
+                "map_73367d498dd8044949217b2cdf74deab",
+                {
+                    center: [-7.2865722, 112.6320953],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dc964e28cec97a980beafc0e6c7ff1dd = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_dc964e28cec97a980beafc0e6c7ff1dd.addTo(map_73367d498dd8044949217b2cdf74deab);
+        
+    
+            var marker_a8a862bb172222ce61bc6c8cedcece46 = L.marker(
+                [-7.2865722, 112.6320953],
+                {}
+            ).addTo(map_73367d498dd8044949217b2cdf74deab);
+        
+    
+            var icon_53cd5829be13523960049c64d352668f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a8a862bb172222ce61bc6c8cedcece46.setIcon(icon_53cd5829be13523960049c64d352668f);
+        
+    
+        var popup_eae1cad87b9292e9184058eff8d000ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9aa91b485cac27af342ae1649b98fbb2 = $(`<div id="html_9aa91b485cac27af342ae1649b98fbb2" style="width: 100.0%; height: 100.0%;"><b>Lokasi Awal</b><br>Universitas Ciputra Surabaya</div>`)[0];
+                popup_eae1cad87b9292e9184058eff8d000ff.setContent(html_9aa91b485cac27af342ae1649b98fbb2);
+            
+        
+
+        marker_a8a862bb172222ce61bc6c8cedcece46.bindPopup(popup_eae1cad87b9292e9184058eff8d000ff)
+        ;
+
+        
+    
+    
+            var marker_1a140c568a7d593e0b33ee42930f14d7 = L.marker(
+                [-7.28906, 112.6756078],
+                {}
+            ).addTo(map_73367d498dd8044949217b2cdf74deab);
+        
+    
+            var icon_1a1b61e5d243c97c0313445845bb1e00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1a140c568a7d593e0b33ee42930f14d7.setIcon(icon_1a1b61e5d243c97c0313445845bb1e00);
+        
+    
+        var popup_03e844c99d4328516c2b77d512924bc5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f0380f7b94692efca50298a69c5b009 = $(`<div id="html_3f0380f7b94692efca50298a69c5b009" style="width: 100.0%; height: 100.0%;"><b>Lokasi Tujuan</b><br>tunjungan plaza</div>`)[0];
+                popup_03e844c99d4328516c2b77d512924bc5.setContent(html_3f0380f7b94692efca50298a69c5b009);
+            
+        
+
+        marker_1a140c568a7d593e0b33ee42930f14d7.bindPopup(popup_03e844c99d4328516c2b77d512924bc5)
+        ;
+
+        
+    
+</script>
+</html>

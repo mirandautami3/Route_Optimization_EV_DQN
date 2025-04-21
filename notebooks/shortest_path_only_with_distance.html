@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_27fe1c637ca7769274f7697075b5904c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_27fe1c637ca7769274f7697075b5904c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_27fe1c637ca7769274f7697075b5904c = L.map(
+                "map_27fe1c637ca7769274f7697075b5904c",
+                {
+                    center: [-7.2865722, 112.6320953],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_acd0595e46e54a63c8ba376ea97b4108 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_acd0595e46e54a63c8ba376ea97b4108.addTo(map_27fe1c637ca7769274f7697075b5904c);
+        
+    
+            var marker_812510caa38e32a5017549c74923ef95 = L.marker(
+                [-7.2865722, 112.6320953],
+                {}
+            ).addTo(map_27fe1c637ca7769274f7697075b5904c);
+        
+    
+            var icon_6157a4f8b0cbb7a11ef438340d97dd45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_812510caa38e32a5017549c74923ef95.setIcon(icon_6157a4f8b0cbb7a11ef438340d97dd45);
+        
+    
+        var popup_acf1b89f205d05ad0a8f40e2870593a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d71a762c6acb8acb55be5d6c7a2e1fc9 = $(`<div id="html_d71a762c6acb8acb55be5d6c7a2e1fc9" style="width: 100.0%; height: 100.0%;">Awal: Universitas Ciputra Surabaya</div>`)[0];
+                popup_acf1b89f205d05ad0a8f40e2870593a2.setContent(html_d71a762c6acb8acb55be5d6c7a2e1fc9);
+            
+        
+
+        marker_812510caa38e32a5017549c74923ef95.bindPopup(popup_acf1b89f205d05ad0a8f40e2870593a2)
+        ;
+
+        
+    
+    
+            var marker_c55f070d3c341e54101edd91023dfb2b = L.marker(
+                [-7.2623869, 112.739006],
+                {}
+            ).addTo(map_27fe1c637ca7769274f7697075b5904c);
+        
+    
+            var icon_9a12a406e210e3a5b0566c83ff09bacc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c55f070d3c341e54101edd91023dfb2b.setIcon(icon_9a12a406e210e3a5b0566c83ff09bacc);
+        
+    
+        var popup_728066747c92a656695e4a3dfead5f54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c8bdc7ccce19870b3d00fce8a17ea0a = $(`<div id="html_0c8bdc7ccce19870b3d00fce8a17ea0a" style="width: 100.0%; height: 100.0%;">Tujuan: tunjungan plaza</div>`)[0];
+                popup_728066747c92a656695e4a3dfead5f54.setContent(html_0c8bdc7ccce19870b3d00fce8a17ea0a);
+            
+        
+
+        marker_c55f070d3c341e54101edd91023dfb2b.bindPopup(popup_728066747c92a656695e4a3dfead5f54)
+        ;
+
+        
+    
+    
+            var poly_line_ad3a10c643243b92cd900734859801e6 = L.polyline(
+                [[-7.2864493, 112.6314568], [-7.2866611, 112.6338672], [-7.286743, 112.6350468], [-7.2866922, 112.6351747], [-7.2855981, 112.6354113], [-7.2851164, 112.6356145], [-7.28505, 112.6356172], [-7.2817547, 112.6360347], [-7.2816109, 112.6360405], [-7.2816379, 112.6381928], [-7.2815492, 112.6405904], [-7.2818454, 112.6423472], [-7.2821067, 112.6428896], [-7.2825415, 112.6437764], [-7.2833642, 112.6453954], [-7.2832971, 112.6465304], [-7.2831922, 112.6465432], [-7.2831159, 112.646794], [-7.2831568, 112.6468406], [-7.283209, 112.6500598], [-7.283884, 112.6533743], [-7.2838674, 112.655367], [-7.2837517, 112.6562266], [-7.2838738, 112.6567157], [-7.2838708, 112.6568369], [-7.282444, 112.6578319], [-7.2816666, 112.6580666], [-7.2816884, 112.658127], [-7.2822658, 112.6595244], [-7.2824112, 112.6598163], [-7.2825248, 112.6601285], [-7.2826915, 112.6607703], [-7.2828984, 112.6621351], [-7.2829289, 112.6623803], [-7.2829626, 112.6627151], [-7.2830878, 112.6634142], [-7.2832193, 112.664107], [-7.2832392, 112.6642935], [-7.2833377, 112.6654906], [-7.2834268, 112.6662678], [-7.2836149, 112.6669664], [-7.2838045, 112.6679583], [-7.2838221, 112.6680222], [-7.2834084, 112.6681819], [-7.2836205, 112.6691005], [-7.28256, 112.669609], [-7.2828601, 112.6725696], [-7.2827978, 112.6733397], [-7.2821946, 112.6740438], [-7.281771, 112.6748113], [-7.2821175, 112.6760137], [-7.2822012, 112.6763358], [-7.2820963, 112.6766793], [-7.2819891, 112.6769715], [-7.2819601, 112.6770551], [-7.2815687, 112.6781248], [-7.2811829, 112.679071], [-7.281886, 112.678967], [-7.2821537, 112.6797845], [-7.2815261, 112.6799937], [-7.281556, 112.6803926], [-7.2813382, 112.6806106], [-7.281731, 112.6814327], [-7.2818332, 112.6820228], [-7.2818593, 112.6821463], [-7.2819319, 112.6832948], [-7.2818899, 112.6836663], [-7.2819273, 112.6837183], [-7.2820257, 112.6838278], [-7.2812547, 112.6846131], [-7.2811762, 112.6846975], [-7.2798193, 112.6863089], [-7.2796135, 112.6865533], [-7.278028, 112.6884361], [-7.2768679, 112.6898138], [-7.2767813, 112.6899166], [-7.2769126, 112.6900332], [-7.2781216, 112.6922621], [-7.2781709, 112.6928045], [-7.2781841, 112.6929298], [-7.2782526, 112.6935619], [-7.2782832, 112.6938436], [-7.2783586, 112.6945384], [-7.2785155, 112.6960294], [-7.2784916, 112.6960928], [-7.2776433, 112.6971499], [-7.277657, 112.6972702], [-7.2776071, 112.6975026], [-7.2763703, 112.6983923], [-7.2763502, 112.6998413], [-7.275989, 112.6997661], [-7.2759993, 112.6998457], [-7.2762131, 112.7023413], [-7.2757439, 112.702391], [-7.2759932, 112.7050397], [-7.2760837, 112.7058256], [-7.2757841, 112.7058782], [-7.2756848, 112.7058998], [-7.2757872, 112.7067252], [-7.2758205, 112.7070276], [-7.2757945, 112.7080536], [-7.2757845, 112.7081441], [-7.2757937, 112.7082272], [-7.2756276, 112.7093095], [-7.2756229, 112.7096099], [-7.2756555, 112.7098701], [-7.2756721, 112.7100404], [-7.2768057, 112.7097787], [-7.2769898, 112.7097307], [-7.2771192, 112.7101119], [-7.2774642, 112.7107824], [-7.2778055, 112.7124258], [-7.2777149, 112.7124252], [-7.277232, 112.7133586], [-7.2772367, 112.7134407], [-7.2772445, 112.7136949], [-7.2772493, 112.7139123], [-7.2772798, 112.7141026], [-7.2773128, 112.7142884], [-7.2773456, 112.7144566], [-7.2773825, 112.7146553], [-7.2774188, 112.7148491], [-7.2777177, 112.7163812], [-7.2777546, 112.7165656], [-7.2780546, 112.7180566], [-7.2776674, 112.7184794], [-7.2777716, 112.7187575], [-7.2778454, 112.7190576], [-7.2779482, 112.7193253], [-7.2781379, 112.7196327], [-7.2785695, 112.7207512], [-7.2785776, 112.7207797], [-7.2786693, 112.7211381], [-7.2792111, 112.7225726], [-7.2790075, 112.7230077], [-7.2789204, 112.723195], [-7.2788234, 112.7234369], [-7.2776285, 112.7245217], [-7.2761199, 112.7255214], [-7.2751449, 112.7260075], [-7.2749494, 112.72612], [-7.2748335, 112.7262008], [-7.2747961, 112.7262845], [-7.274825, 112.7263892], [-7.2746709, 112.7267383], [-7.2746429, 112.7267409], [-7.2741283, 112.7268896], [-7.2737315, 112.7270519], [-7.2722083, 112.7276491], [-7.2717367, 112.7278878], [-7.2716387, 112.7279237], [-7.2709217, 112.7281865], [-7.2694923, 112.728748], [-7.269087, 112.728866], [-7.268712, 112.7290249], [-7.2682859, 112.7291741], [-7.2665661, 112.7298499], [-7.2656104, 112.7302444], [-7.2655562, 112.7302652], [-7.2646002, 112.7307152], [-7.2640378, 112.7309378], [-7.2646373, 112.7326753], [-7.265304, 112.7358768], [-7.2646702, 112.7364768], [-7.2636799, 112.7366097], [-7.2634568, 112.7366062], [-7.2633605, 112.7366076], [-7.263964, 112.7410924], [-7.2626695, 112.7407457], [-7.2609651, 112.7388506]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_27fe1c637ca7769274f7697075b5904c);
+        
+    
+            poly_line_ad3a10c643243b92cd900734859801e6.bindTooltip(
+                `<div>
+                     Shortest Path - 0.02 km
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
