@@ -1,6 +1,0 @@
-streamlit==1.10.0
-tensorflow==2.10.0
-numpy==1.21.2
-geopy==2.2.0
-osmnx==1.1.2
-networkx==2.6.3
